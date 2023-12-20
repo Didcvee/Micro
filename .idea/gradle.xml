@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ApiGateway" />
+        <option name="gradleJvm" value="corretto-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ApiGateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ApiGatewayX" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ApiGatewayX" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ApiGatewayXXX" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ApiGatewayXXX" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/PhotoAppApiUsers" />
+        <option name="gradleJvm" value="corretto-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/PhotoAppApiUsers" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/PhotoAppDiscoveryService" />
+        <option name="gradleJvm" value="corretto-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/PhotoAppDiscoveryService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

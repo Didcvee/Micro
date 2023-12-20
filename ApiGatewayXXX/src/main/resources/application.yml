@@ -1,0 +1,25 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # мы можем совместно использовать автомтаический роутинг с ручным
+      routes:
+        - id: users-status-check
+          uri: lb://users-ws
+          predicates:
+            - Path=/hello
+            - Method=GET
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/hello, /users/aloha # фильтр для перенаправления запроса /hello (from user) -> /users/aloha (на настоящий)
+  application:
+    name: api-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
+
