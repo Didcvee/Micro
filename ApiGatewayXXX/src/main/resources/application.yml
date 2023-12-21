@@ -11,10 +11,10 @@ spring:
           uri: lb://users-ws
           predicates:
             - Path=/hello
-            - Method=GET
+            - Method=POST
           filters:
             - RemoveRequestHeader=Cookie
-            - RewritePath=/hello, /users/aloha # фильтр для перенаправления запроса /hello (from user) -> /users/aloha (на настоящий)
+            - RewritePath=/hello, /users # фильтр для перенаправления запроса /hello (from user) -> /users/aloha (на настоящий)
   application:
     name: api-gateway
 eureka:
